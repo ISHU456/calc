@@ -82,4 +82,79 @@ p:hover{
     font-weight: 700;
     color: black;
 }
-.input
+.input::placeholder{
+    text-align: right;
+}
+button{
+    background-color:rgba(255, 255, 255, 0.976);
+    font-size: large;
+    font-weight: 800;
+    text-transform: inherit;
+    width:50px;
+    height:50px;
+    border-radius: 20px;
+    position:relative;
+    top:10px;
+    border-width: 0px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+button:active{
+    background-color:#cff5ff;
+    
+}
+.row{
+    padding-top: 4px;
+}
+.equals{
+    background-color: orange;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.equals:hover{
+    background-color: orangered;
+    color: #fff;
+
+}
+.equals:active{
+    background-color: red;
+    color: aliceblue;
+    transform: scale(80%);
+    box-shadow: 4px 4px 10px rgb(80, 80, 80);
+}
+.symbols{
+    text-decoration: firebrick;
+    font: 800;
+    font-weight:bold;
+    background-color:rgb(54, 54, 54);
+    color:rgb(255, 255, 255);
+    transition: all 0.5s ease-out;
+}
+.symbols:hover{
+    color: black;
+    
+}
+
+button:hover .symbols{
+    color: black;
+}
+.AC{
+    background-color: rgb(253, 143, 0);
+    transition: 0.5s;
+}
+.AC:hover{
+    background-color: orangered;
+    color:#fff;
+}
+.AC:active{
+    background-color: rgb(125, 8, 8);
+    scale:90%;
+    box-shadow: 4px 4px 10px black;
+}
+.name{
+    padding-top: 10px;
+}
