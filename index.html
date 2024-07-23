@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <title>Calculator | Ishu Anand Malviya</title>
+</head>
+<body>
+    
+    <div class="container">
+        <a href="index.html" style="text-decoration: none;"><p class="cal">CALCULATOR</p></a>
+        <div class="box">
+            <input type="text" class="input" placeholder="0" id ="display">
+            <section class="row">
+                <button class="AC" onclick="clearValue()">AC</button>
+                <button class="symbols" onclick="delValue()">del</button>
+                <button class="symbols" onclick="appendToDisplay('%')">%</button>
+                <button class="symbols" onclick="appendToDisplay('/')">/</button>
+            </section>
+            <section class="row">
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button class="symbols" onclick="appendToDisplay('*')">x</button>
+            </section>
+            <section class="row">
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button class="symbols" onclick="appendToDisplay('+')">+</button>
+            </section>
+            <section class="row">
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button class="symbols" onclick="appendToDisplay('-')">-</button>
+            </section>
+            <section class="row">
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('00')">00</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button class="equals" onclick="calculate()">=</button>
+            </section>
+        </div> 
+    </div>
+    <div>
+        <marquee behavior="scroll" direction="left" scrollamount="8" style="font-family: arial;font-weight: 600;background-color: rgb(0, 0, 0);color:white;padding:10px"> MADE BY ISHU ANAND MALVIYA  |   ALL RIGHTS RESERVED COPYRIGHT&copy;</marquee>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
